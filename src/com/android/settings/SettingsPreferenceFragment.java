@@ -192,6 +192,7 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     }
 
     public void showPinnedHeader(boolean show) {
+        if (mPinnedHeaderFrameLayout == null) return;
         mPinnedHeaderFrameLayout.setVisibility(show ? View.VISIBLE : View.INVISIBLE);
     }
 
